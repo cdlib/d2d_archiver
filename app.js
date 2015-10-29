@@ -4,10 +4,13 @@ var configurer = require('./lib/configurer.js');
 
 configurer.startup((process.argv[2] ? '/' + process.argv[2] : process.cwd() + '/config/app.json'), function(){
 	var express = require('express');
+	var bodyParser = require('body-parser');
+	
 	var router = require('./lib/router.js');
 	var server = express();
 	
-	server.use('/', router);
+	server.use(bodyParser.urlencoded({extended: true}));
+	server.use(router);
 
 	// Startup the web server	
 	server.listen(CONFIG['server']['port'], function(){

@@ -16,14 +16,14 @@
     "s3"
   ],
   "author": "Brian Riley",
-  "license": "BSD-Modified",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/cdlib/d2d_archiver/issues"
   },
   "homepage": "https://github.com/cdlib/d2d_archiver",
   "dependencies": {
     "express": "^4.13.1",
-    "request": "^2.60.0",
+    "body-parser": "~1.10.1",
     "bunyan": "^1.4.0"
   },
   "devDependencies": {
