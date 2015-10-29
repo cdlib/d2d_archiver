@@ -1,0 +1,32 @@
+{
+  "name": "d2d_archiver",
+  "version": "0.0.0",
+  "description": "A simple API that allows an application to send a POST request that contains the URI of an archive file. The API then retrieves that file and stores it on the local disk or an AWS S3 bucket.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdlib/d2d_archiver"
+  },
+  "keywords": [
+    "d2d",
+    "archive",
+    "s3"
+  ],
+  "author": "Brian Riley",
+  "license": "BSD-Modified",
+  "bugs": {
+    "url": "https://github.com/cdlib/d2d_archiver/issues"
+  },
+  "homepage": "https://github.com/cdlib/d2d_archiver",
+  "dependencies": {
+    "express": "^4.13.1",
+    "request": "^2.60.0",
+    "bunyan": "^1.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}

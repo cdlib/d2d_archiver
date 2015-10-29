@@ -1,0 +1,1 @@
+A simple API that allows an application to send a POST request that contains the URI of an archive file. The API then retrieves that file and stores it on the local disk or an AWS S3 bucket.
