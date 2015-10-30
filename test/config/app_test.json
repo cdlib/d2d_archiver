@@ -1,0 +1,18 @@
+{
+ "server": {"name": "mock_server",
+            "port": 9099,
+            "log": {"level": "debug",
+                    "path": "./log/"},
+            "retriever": {"timeout": 2000,
+                          "max_file_size": 20000}
+            },
+ "projects": { 
+   "tester": {"domain": "localhost",
+              "key": "12345",
+              "uri_form_field": "uri",
+              "headers": {"accept": "application/zip",
+                          "accept-charset": "binary"},
+              "io": {"path": "../tmp/"}
+             }
+  }
+}

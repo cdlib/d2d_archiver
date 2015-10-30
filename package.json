@@ -4,7 +4,7 @@
   "description": "A simple API that allows an application to send a POST request that contains the URI of an archive file. The API then retrieves that file and stores it on the local disk or an AWS S3 bucket.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha ./test/ --recursive"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "dependencies": {
     "express": "^4.13.1",
     "body-parser": "~1.10.1",
+    "request": "^2.6.5",
     "bunyan": "^1.4.0"
   },
   "devDependencies": {
