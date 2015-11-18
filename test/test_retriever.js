@@ -35,9 +35,11 @@ describe('retriever.js testing', function() {
 		});
 		
 		// ------------------------------------------
-		retriever.on('complete', function(contents){
+		retriever.on('complete', function(file_name){
 			
-			fs.stat(dest, function(err, stats){
+			console.log(dest + file_name);
+			
+			fs.stat(dest + file_name, function(err, stats){
 				if(err){ 
 					LOG.error(err); 
 					done(); 
@@ -45,7 +47,7 @@ describe('retriever.js testing', function() {
 				}else{
 					assert(stats.isFile());
 				
-					fs.unlinkSync(dest);
+					fs.unlinkSync(dest + file_name);
 					done();
 				}
 			});
@@ -60,6 +62,7 @@ function formatDate(){
 	var now = new Date();
 	var mm = (now.getMonth()+1).toString();
 	var dd = now.getDate().toString();
+	var yr = now.getFullYear().toString();
 	
-	return now.getFullYear().toString() + (mm[1] ? mm : "0" + mm[0]) + (dd[1] ? dd : "0" + dd[0]); 
+	return yr + (mm[1] ? mm : "0" + mm[0]) + (dd[1] ? dd : "0" + dd[0]) + '_' + now.getTime(); 
 }

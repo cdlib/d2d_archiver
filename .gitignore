@@ -4,6 +4,7 @@ config/*.json
 node_modules/
 log/
 tmp/
+test/tmp/
 
 .DS_Store
 

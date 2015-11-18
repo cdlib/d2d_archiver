@@ -12,7 +12,7 @@
               "uri_form_field": "uri",
               "headers": {"accept": "application/zip",
                           "accept-charset": "binary"},
-              "io": {"path": "./tmp/",
+              "io": {"path": "./test/tmp/",
                      "extension": "gz"}
              }
   }
