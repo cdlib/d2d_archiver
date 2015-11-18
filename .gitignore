@@ -3,4 +3,7 @@ config/*.json
 
 node_modules/
 log/
+tmp/
+
+.DS_Store
 
