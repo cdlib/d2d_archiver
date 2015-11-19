@@ -10,10 +10,10 @@
    "tester": {"domain": "localhost",
               "key": "12345",
               "uri_form_field": "uri",
+              "extension": "gz",
               "headers": {"accept": "application/zip",
                           "accept-charset": "binary"},
-              "io": {"path": "./test/tmp/",
-                     "extension": "gz"}
+              "io": {"path": "./test/tmp/"}
              }
   }
 }

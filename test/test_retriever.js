@@ -23,7 +23,7 @@ describe('retriever.js testing', function() {
 			dest = dest.replace(/\./, process.cwd());
 		}
 		
-		dest += 'tester_archive_' + formatDate() + '.' + CONFIG['projects']['tester']['io']['extension'];
+		dest += 'tester_archive_' + formatDate() + '.' + CONFIG['projects']['tester']['archive_extension'];
 		
 		
 		retriever.retrieve('tester', test_file);
