@@ -1,0 +1,31 @@
+{
+ "server": {"name": "d2d_archiver",
+            "port": 18880,
+            "log": {"level": "info",
+                    "path": "./log/"},
+            "retriever": {"timeout": 200000,
+                          "max_file_size": 2000000000}},
+ 
+ "projects": { 
+   "application_1": {"domain": "my.server.org",
+              "archive_extension": "gz",
+              "key": "1234567890",
+              "uri_form_field": "archive-file",
+              "io": {"path": "/path/to/archive/directory/"}},
+   "application_2": {"domain": "another.app.org",
+              "archive_extension": "zip",
+              "key": "ABCDEFGHIJK",
+              "uri_form_field": "target",
+              "aws": {"region": "us-west-2",
+                      "bucket": "my-bucket",
+                      "key_prefix": "path/to/object/"}},
+   "application_3": {"domain": "external.vendor.edu",
+              "archive_extension": "gz",
+              "key": "235khk-435df",
+              "uri_form_field": "URL",
+              "io": {"path": "/path/to/archive/"},
+              "aws": {"region": "us-west-2",
+                      "bucket": "vendor-bucket",
+                      "key_prefix": "archive/"}}
+  }
+}
