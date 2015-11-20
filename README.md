@@ -49,9 +49,9 @@ You can specify the 'io' and/or 'aws' sections for your application. If you only
 > curl -v --data "archive-file=http://my.server.org/path/file_name.gz" http://service.host.org/application_1/1234567890/
 
 Note: 
-1. The POST data has a form value, 'archive-file' that matches the uri_form_field in the config 
-2. The domain of the file in the 'archive-file' value MUST match the 'domain' in the config
-3. The service MUST be addressed to match the config [project]/[key]/ 
+* The POST data has a form value, 'archive-file' that matches the uri_form_field in the config 
+* The domain of the file in the 'archive-file' value MUST match the 'domain' in the config
+* The service MUST be addressed to match the config [project]/[key]/ 
 
 ### Future Development
 The service could be extended to allow an HTTP Post that contains the archive file instead of a URI.
