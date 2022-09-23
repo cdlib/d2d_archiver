@@ -1,3 +1,5 @@
+#ARCHIVED: This project is no longer in use
+
 ## D2D Archiver Service
 
 ### Description
